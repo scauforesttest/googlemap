@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+     >
+
+    <TextView
+        android:id="@+id/tv_jindu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="28dp"
+        android:text="longitude"
+        android:textSize="20sp"
+        android:background="#ffffff" />
+
+    <TextView
+        android:id="@+id/tv_longNum"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_jindu"
+        android:layout_alignTop="@+id/tv_jindu"
+        android:layout_marginLeft="50dp"
+        android:background="#ffffff"
+        android:layout_toRightOf="@+id/tv_jindu"
+         />
+
+    <TextView
+        android:id="@+id/tv_latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_jindu"
+        android:layout_below="@+id/tv_jindu"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/tv_longNum"
+        android:background="#ffffff"
+        android:text="latitude"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_latNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_latitude"
+        android:layout_alignLeft="@+id/tv_longNum"
+        android:layout_alignRight="@+id/tv_longNum"
+        android:layout_alignTop="@+id/tv_latitude"
+        android:background="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_latNum"
+        android:layout_alignParentRight="true"
+        android:text="change"
+        android:background="#00a0b0" 
+        android:layout_marginRight="10dp"/>
+
+    
+</RelativeLayout>
